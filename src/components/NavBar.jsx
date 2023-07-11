@@ -9,7 +9,8 @@ const NavBar = () => {
     </>
     return (
         <>
-            <div className="navbar hidden md:flex text-black bg-dark border-b-2 shadow-sm text-sm text-white">
+            <div className="navbar md:flex bg-dark/80 border-b text-sm text-white backdrop-blur-xl shadow-xl 
+            fixed top-0 left-0 right-0 z-10">
                 <div className="navbar-start flex gap-2">
 
                     <a className="normal-case"><img src="logo.png" className="w-32" /></a>

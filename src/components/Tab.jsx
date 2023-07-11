@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BsSearch } from "react-icons/bs";
 import Accordion from './Accordion';
 import Overview from './Overview';
 import Notes from './Notes';
 import Announcements from './Announcements';
 import Reviews from './Reviews';
-import Tools from './Tools';
+import Tools from './Search';
+import Search from './Search';
 const Tab = () => {
     const [activeTab, setActiveTab] = useState(1);
 
@@ -58,23 +59,16 @@ const Tab = () => {
                 >
                     Reviews
                 </button>
-                <button
-                    className={`px-4 py-2 focus:outline-none ${activeTab === 7 ? 'active-tab' : 'text-green/50'
-                        }`}
-                    onClick={() => handleTabClick(7)}
-                >
-                    Learning Tools
-                </button>
+                
             </div>
 
             <div className="p-4">
-                {activeTab === 1 && <p>Content for Option 1</p>}
+                {activeTab === 1 && <Search/>}
                 {activeTab === 2 && <Accordion/>}
                 {activeTab === 3 && <Overview/>}
                 {activeTab === 4 && <Notes/>}
                 {activeTab === 5 && <Announcements/>}
                 {activeTab === 6 && <Reviews/>}
-                {activeTab === 7 && <Tools/>}
             </div>
         </div>
     );
