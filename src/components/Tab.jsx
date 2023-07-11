@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import { BsSearch } from "react-icons/bs";
+import Accordion from './Accordion';
+import Overview from './Overview';
+import Notes from './Notes';
+import Announcements from './Announcements';
+import Reviews from './Reviews';
+import Tools from './Tools';
 const Tab = () => {
     const [activeTab, setActiveTab] = useState(1);
 
@@ -8,7 +14,7 @@ const Tab = () => {
     };
 
     return (
-        <div className="w-fullmt-10 p-2">
+        <div className="w-[80%] mx-auto mt-10">
             <div className="flex border-b">
                 <button
                     className={`px-4 py-2 focus:outline-none ${activeTab === 1 ? 'active-tab' : 'text-green/50'
@@ -61,16 +67,14 @@ const Tab = () => {
                 </button>
             </div>
 
-
-
             <div className="p-4">
                 {activeTab === 1 && <p>Content for Option 1</p>}
-                {activeTab === 2 && <p>Content for Option 2</p>}
-                {activeTab === 3 && <p>Content for Option 3</p>}
-                {activeTab === 4 && <p>Content for Option 4</p>}
-                {activeTab === 5 && <p>Content for Option 5</p>}
-                {activeTab === 6 && <p>Content for Option 6</p>}
-                {activeTab === 7 && <p>Content for Option 7</p>}
+                {activeTab === 2 && <Accordion/>}
+                {activeTab === 3 && <Overview/>}
+                {activeTab === 4 && <Notes/>}
+                {activeTab === 5 && <Announcements/>}
+                {activeTab === 6 && <Reviews/>}
+                {activeTab === 7 && <Tools/>}
             </div>
         </div>
     );

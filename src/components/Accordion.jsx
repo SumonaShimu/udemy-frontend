@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MdOndemandVideo } from "react-icons/md";
 const Accordion = () => {
     const [isOpen1, setIsOpen1] = useState(false);
@@ -13,7 +13,7 @@ const Accordion = () => {
     };
 
     return (
-        <div className="w-full p-2">
+        <div className="w-full p-2 min-h-[70vh]">
             <div className="border rounded-md">
                 <div className="border-b bg-sky/10">
                     <button
@@ -36,7 +36,7 @@ const Accordion = () => {
                 </div>
                 {isOpen1 && (
                     <div className="px-4 py-3">
-                        <div className="overflow-x-scroll">
+                        <div className="overflow-hidden">
                             <table className="table">
 
                                 <tbody>
@@ -122,7 +122,7 @@ const Accordion = () => {
                 </div>
                 {isOpen2 && (
                     <div className="px-4 py-3">
-                        <div className="overflow-x-scroll">
+                        <div className="overflow-hidden">
                             <table className="table">
 
                                 <tbody>

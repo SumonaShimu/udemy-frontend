@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 function App() {
 
   return (
-    <div className='w-[100%] bg-dark text-white min-h-screen'>
+    <div className='w-[100%] bg-dark text-white'>
       <NavBar/>
       <Sidebar/>
     </div>
