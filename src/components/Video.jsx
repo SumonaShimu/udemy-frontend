@@ -20,7 +20,7 @@ const Video = () => {
   }, []);
 
   return (
-    <div className="w-[80%] mt-20 mx-auto">
+    <div className="w-[70%] mt-20 mx-auto">
       <iframe
         ref={iframeRef}
         src="https://www.youtube.com/embed/VchuKL44s6E"
