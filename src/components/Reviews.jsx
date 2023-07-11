@@ -1,5 +1,4 @@
-import { FaAngleDown, FaRegStar, FaStar, FaStarHalf, FaStarHalfAlt } from "react-icons/fa";
-import { AiOutlineStar } from "react-icons/ai";
+import { FaAngleDown, FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
 const Reviews = () => {
     return (
         <div className="min-h-[70vh] ">

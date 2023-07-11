@@ -15,7 +15,7 @@ const Announcements = () => {
                 Hello every one<br/><br/>
                 <p className="font-semibold italic">100% Free</p><br/><br/>
 
-                now our Paid course " Ultimate Jenkins Guide with Interview Preparation " is fully Free and Available on our YouTube Channel
+                now our Paid course <span className="font-semibold text-blue ">Ultimate Jenkins Guide with Interview Preparation</span>   is fully Free and Available on our YouTube Channel
 
                 <br/><br/>
 

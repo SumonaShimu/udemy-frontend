@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { BsMenuDown, BsTelephone, BsThreeDotsVertical } from "react-icons/bs";
+
+import {BsThreeDotsVertical } from "react-icons/bs";
 import { TbProgress } from "react-icons/tb";
 import { FaAngleDown, FaShare } from "react-icons/fa6";
 const NavBar = () => {
