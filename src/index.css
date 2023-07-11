@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.checkbox{
+    border: 1px solid #0EFF8D;
+}
+
+.active-tab{
+        color: #0EFF8D;
+        border-bottom: 2px solid #0eff8fd8;
+}
+
