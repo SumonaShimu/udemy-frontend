@@ -5,7 +5,6 @@ import Overview from './Overview';
 import Notes from './Notes';
 import Announcements from './Announcements';
 import Reviews from './Reviews';
-import Tools from './Search';
 import Search from './Search';
 const Tab = () => {
     const [activeTab, setActiveTab] = useState(1);
